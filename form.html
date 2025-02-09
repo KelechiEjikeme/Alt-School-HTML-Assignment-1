@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltSchool Africa Signup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .left-section {
+            flex: 1;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+        }
+
+        .left-section img {
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 2rem;
+        }
+
+        .right-section {
+            flex: 1;
+            padding: 2rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-group {
+            flex: 1;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .password-input {
+            position: relative;
+        }
+
+        .password-toggle {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #666;
+        }
+
+        .signup-button {
+            width: 100%;
+            padding: 1rem;
+            background-color: #0066FF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        .terms {
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .terms a {
+            color: #0066FF;
+            text-decoration: none;
+        }
+
+        .signin-link {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-section">
+        <img src="Assets/images/desola-lanre-ologun-Esu7vO5THyE-unsplash.jpg" alt="Learning illustration">
+        <h2>Learn highly sought after skills without hassle.</h2>
+    </div>
+
+    <div class="right-section">
+        <a href="#" class="signin-link">Already an AltScholar? Sign In!</a>
+        <h1>Signup</h1>
+        <p class="subtitle">Take the next steps to apply at AltSchool Africa</p>
+
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>First Name</label>
+                    <input type="text" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <label>Last Name</label>
+                    <input type="text" placeholder="Last Name">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <select>
+                        <option>Select gender</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Date of Birth</label>
+                    <input type="text" placeholder="dd/mm/yyyy">
+                </div>
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="Phone Number">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Country of Residence</label>
+                    <input type="text" placeholder="Country of Residence">
+                </div>
+                <div class="form-group">
+                    <label>State of Residence</label>
+                    <input type="text" placeholder="State of Residence">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Password</label>
+                    <div class="password-input">
+                        <input type="password" placeholder="Password">
+                        <span class="password-toggle">👁️</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Confirm Password</label>
+                    <div class="password-input">
+                        <input type="password" placeholder="Confirm Password">
+                        <span class="password-toggle">👁️</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>How did you hear about us?</label>
+                <input type="text" placeholder="Optional: Let us know how you found us">
+            </div>
+
+            <div class="terms">
+                By clicking continue, I agree to <a href="#">Terms of Use</a> and acknowledge that I have read the <a href="#">Privacy Policy</a>.
+            </div>
+
+            <button type="submit" class="signup-button">Signup →</button>
+        </form>
+    </div>
+</body>
+</html>
